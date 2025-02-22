@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/Poppins-Regular.woff) format("woff");
+}
+body {
+  font-family: poppins;
+  /* padding-bottom: 10rem; */
+}
+
+:root {
+  --color-C90000: #c90000;
+  --color-323232: #323232;
+  --color-7D7C7C: #7d7c7c;
+  --color-FFC300: #ffc300;
+  --color-F1F1F1: #f1f1f1;
+  --color-504F4F: #504f4f;
+  --color-FFE252: #ffe252;
+  --color-323232: #323232;
+  --color-FFF6A3: #fff6a3;
+  --color-E3E3E3: #e3e3e3;
+  --color-FFFDE6: #fffde6;
+}
+img {
+  width: 100%;
+}
+.curser_pointer {
+  cursor: pointer;
+}

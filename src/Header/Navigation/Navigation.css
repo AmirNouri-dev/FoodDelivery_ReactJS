@@ -1,0 +1,7 @@
+.main_navigation {
+  display: grid;
+  grid-template-columns: 160px 620px 187px;
+  justify-content: space-between;
+  margin-top: 1rem;
+  align-items: center;
+}

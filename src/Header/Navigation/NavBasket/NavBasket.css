@@ -1,0 +1,30 @@
+.nav_logo_and_basket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.nav_basket {
+  cursor: pointer;
+  position: relative;
+}
+.basket_count {
+  position: absolute;
+  background-color: var(--color-C90000);
+  opacity: 0.9;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  border-radius: 100%;
+  z-index: 1;
+  top: 5%;
+  left: 22%;
+  display: none;
+}
+.nav_basket svg {
+  width: 70%;
+}
+.nav_basket path {
+  fill: var(--color-7D7C7C);
+}
