@@ -1,14 +1,14 @@
 import './BannerRightSection.css'
 function BannerRightSection() {
     return(
-        <div class="main_header_right">
-              <div class="main_header_right_img_container">
+        <div className="main_header_right">
+              <div className="main_header_right_img_container">
                 <img
                   src="../src/assets/images/Group 15.png"
                   alt=""
-                  class="main_header_right_img"
+                  className="main_header_right_img"
                 />
-                <div class="food_order_deliver">
+                <div className="food_order_deliver">
                   <div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
