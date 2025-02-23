@@ -1,0 +1,84 @@
+.main_header_left {
+  align-self: center;
+}
+.main_header_left h1 {
+  font-size: 3rem;
+  max-width: 100%;
+  color: var(--color-C90000);
+  font-weight: 600;
+  line-height: 72px;
+}
+.main_header_left p {
+  max-width: 100%;
+  padding-top: 1rem;
+  font-size: 1rem;
+  color: var(--color-504F4F);
+  font-weight: 400;
+  line-height: 24px;
+}
+.food_order_price {
+  margin-bottom: 24px;
+}
+.food_order_price span {
+  font-size: 1rem;
+  color: var(--color-323232);
+  font-weight: 300;
+  line-height: 24px;
+}
+.food_order_price span:nth-child(2) {
+  font-size: 1.5rem;
+}
+.food_order_price span:nth-child(3) {
+  font-size: 1.5rem;
+}
+.food_order {
+  padding-top: 40px;
+}
+.food_order_action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 369px;
+  gap: 40px;
+}
+.food_order_action_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "poppins";
+  background-color: var(--color-FFC300);
+  padding: 16px 24px;
+  border-radius: 100px;
+  box-shadow: 0 20px 20px 0 rgba(112, 144, 176, 0.2);
+  border: none;
+  color: var(--color-323232);
+  gap: 12px;
+}
+.food_order_action_text {
+  font-size: 20px;
+}
+.food_order_quantity {
+  max-width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 8px 16px;
+  border-radius: 100px;
+  box-shadow: 0 17px 10px 0 rgba(112, 144, 176, 0.2);
+  border: 1px solid rgba(241, 241, 241, 0.7);
+  color: var(--color-323232);
+  gap: 12px;
+}
+.main_header_left_content {
+  margin-bottom: 40px;
+  width: 350px;
+}
+#user_input_number {
+  max-width: 80%;
+  padding: 0 16px;
+  font-size: 20px;
+  color: var(--color-FFC300);
+  border-left: 1px solid var(--color-F1F1F1);
+  border-right: 1px solid var(--color-F1F1F1);
+}
