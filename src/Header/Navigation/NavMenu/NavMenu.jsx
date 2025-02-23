@@ -2,22 +2,22 @@ import './NavMenu.css'
 
 function NavMenu() {
     return(
-        <div class="nav_menu">
-              <ul class="nav_menu_items">
-                <li class="nav_menu_item">
-                  <a href="#" class="nav_menu_link">Homepage</a>
+        <div className="nav_menu">
+              <ul className="nav_menu_items">
+                <li className="nav_menu_item">
+                  <a href="#" className="nav_menu_link">Homepage</a>
                 </li>
-                <li class="nav_menu_item">
-                  <a href="#menux" class="nav_menu_link">Menu</a>
+                <li className="nav_menu_item">
+                  <a href="#menux" className="nav_menu_link">Menu</a>
                 </li>
-                <li class="nav_menu_item">
-                  <a href="#saleoffx" class="nav_menu_link">Sale off</a>
+                <li className="nav_menu_item">
+                  <a href="#saleoffx" className="nav_menu_link">Sale off</a>
                 </li>
-                <li class="nav_menu_item">
-                  <a href="./cart.html" class="nav_menu_link">Cart</a>
+                <li className="nav_menu_item">
+                  <a href="./cart.html" className="nav_menu_link">Cart</a>
                 </li>
-                <li class="nav_menu_item">
-                  <a href="#" class="nav_menu_link">Contact</a>
+                <li className="nav_menu_item">
+                  <a href="#" className="nav_menu_link">Contact</a>
                 </li>
               </ul>
         </div>

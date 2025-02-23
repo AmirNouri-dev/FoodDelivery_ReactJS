@@ -10,11 +10,11 @@
   padding: 1rem;
   text-decoration: none;
   color: var(--color-7D7C7C);
-  transition: all 170ms ease;
-  -webkit-transition: all 170ms ease;
-  -moz-transition: all 170ms ease;
-  -ms-transition: all 170ms ease;
-  -o-transition: all 170ms ease;
+  transition: all 70ms ease;
+  -webkit-transition: all 70ms ease;
+  -moz-transition: all 70ms ease;
+  -ms-transition: all 70ms ease;
+  -o-transition: all 70ms ease;
 }
 /* .nav_menu_item:nth-child(1) .nav_menu_link {
     color: var(--color-C90000);
