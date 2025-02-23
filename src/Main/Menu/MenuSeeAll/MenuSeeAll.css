@@ -1,0 +1,11 @@
+.menu_see_all {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.menu_see_all a {
+  font-size: 20px;
+  color: var(--color-504F4F);
+  font-weight: 500;
+  text-decoration: underline;
+}
