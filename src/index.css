@@ -33,3 +33,262 @@ img {
 .curser_pointer {
   cursor: pointer;
 }
+/*media*/
+@media only screen and (min-width: 1201px) {
+  .sale_item_container {
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .search_location_container h4 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .food_order_deliver {
+    top: -4rem;
+    left: -10rem;
+  }
+  .nav_icons {
+    display: block;
+  }
+  .main_navigation {
+    grid-template-columns: repeat(3, auto);
+  }
+  .nav_menu {
+    position: fixed;
+    padding: 1rem;
+    background-color: var(--color-C90000);
+    color: #fff;
+    top: 0;
+    z-index: 1;
+    left: -16rem;
+    bottom: 0;
+    width: 16rem;
+    transition: all 300ms ease-in;
+    border-radius: 10px;
+  }
+  .nav_menu_items {
+    flex-direction: column;
+  }
+  .nav_menu_link {
+    color: var(--color-F1F1F1);
+  }
+  .nav_menu_link:hover {
+    color: var(--color-FFE252);
+    font-size: 1.2rem;
+    text-shadow: -1px -1px #fff;
+  }
+  .nav_menu_item {
+    padding: 1rem 2rem;
+  }
+  .main_navigation {
+    display: grid;
+  }
+  .nav_icon {
+    display: block;
+    justify-self: center;
+  }
+  .nav_buttons {
+    justify-self: center;
+  }
+  .menu_foods_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sale_item_container {
+    margin: 0 auto;
+  }
+  .main_header_left h1 {
+    font-size: 2rem;
+    width: 230px;
+    margin-top: 3rem;
+    line-height: 48px;
+  }
+  .main_header {
+    margin-top: 5rem;
+  }
+  /* .main_header_right_img_container {
+      width: 370px;
+    } */
+
+  .img_mobile_app {
+    grid-row: 2;
+    grid-column: 1 span;
+    width: 120%;
+  }
+  .img_mobile_app img {
+    transform: none;
+    top: 10px;
+    left: 80px;
+    position: relative;
+  }
+  .content_mobile_app {
+    grid-row: 1;
+    grid-column: 2 span;
+  }
+  .content_mobile_app h4 {
+    font-size: 36px;
+    max-width: 80%;
+  }
+  .content_mobile_app h6 {
+    font-size: 20px;
+  }
+  .content_mobile_app p {
+    font-size: 16px;
+    max-width: 80%;
+  }
+  /*serach loc*/
+
+  .search_location_container img {
+    position: absolute;
+    max-width: 110px;
+  }
+  .search_location_container form {
+    width: 120%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .main_header {
+    grid-template-columns: 100%;
+  }
+  .menu_foods_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .menu_food_container {
+    margin: 0 auto;
+  }
+  .main_header_left {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .main_header_left_content {
+    width: 100%;
+  }
+  .food_order_action {
+    width: 100%;
+  }
+  .food_order_price {
+    text-align: center;
+  }
+  .main_header_left p,
+  .main_header_left h1 {
+    width: 100%;
+  }
+  .main_header {
+    margin-top: 0;
+  }
+  .food_order_desktop {
+    display: none;
+  }
+  .food_order_deliver {
+    position: static;
+    width: 30%;
+    margin: 0 auto;
+  }
+  .sale_item_left {
+    transform: scale(1);
+    right: -30px;
+  }
+  .footer_container {
+    padding: 2rem 0rem 2rem 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-self: center;
+  }
+  .footer_container_content {
+    grid-row: 2;
+    grid-column: 2 span;
+    justify-self: center;
+  }
+  .footer_container_content_logo {
+    margin-top: 1rem;
+  }
+  .search_location_container h4,
+  .search_location_container p {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .food_order_mobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .food_order_price {
+    text-align: center;
+  }
+  .sale_item_left {
+    transform: scale(0.9);
+    right: 0;
+  }
+  .mobile_app {
+    max-width: 100%;
+    margin-top: 8rem;
+    border-radius: 500px 500px 0 0;
+  }
+  .content_mobile_app_btn {
+    justify-content: center;
+  }
+
+  .img_mobile_app {
+    transform: scale(1);
+    position: relative;
+    text-align: center;
+    grid-column: 2 span;
+    width: 100%;
+  }
+  .img_mobile_app img {
+    /* max-width: 350px; */
+    transform: none;
+    left: 0;
+    top: 12px;
+    /* position: relative; */
+  }
+  .content_mobile_app {
+    text-align: center;
+    margin-top: 6rem;
+  }
+  .content_mobile_app h4 {
+    font-size: 24px;
+    max-width: 100%;
+  }
+  .content_mobile_app h6 {
+    font-size: 20px;
+  }
+  .content_mobile_app p {
+    font-size: 12px;
+    max-width: 100%;
+  }
+  .search_location_container h4 {
+    font-size: 20px;
+  }
+  .search_location_container p {
+    font-size: 12px;
+  }
+  .search_location_container form {
+    width: 140%;
+    height: 50px;
+  }
+  .search_location_container form button {
+    height: 60%;
+    top: 20%;
+    padding: 6px;
+  }
+  .search_location_container img {
+    max-width: 90px;
+  }
+}
