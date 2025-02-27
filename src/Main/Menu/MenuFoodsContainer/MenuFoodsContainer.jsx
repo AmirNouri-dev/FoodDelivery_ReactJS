@@ -19,6 +19,7 @@ export default function MenuFoodsContainer() {
               <MenuFoodContainer {...allFoods[4]} />
               <MenuFoodContainer title='‌Lipton' desc="Tea with Ice,Lime and Mint" image ='../src/assets/images/best seller/Lipton.png' badge='' price={0.89} />
               <MenuFoodContainer title={allFoods[0].title} desc={allFoods[0].desc} image ={allFoods[0].image} badge={allFoods[0].badge} price={allFoods[0].price} />
+              <MenuFoodContainer /*without value*/ />
             </div>
     )
 }

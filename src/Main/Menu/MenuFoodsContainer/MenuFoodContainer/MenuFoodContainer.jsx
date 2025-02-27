@@ -1,7 +1,7 @@
 import './MenuFoodContainer.css'
 
-const MenuFoodContainer = (props) =>{
-  let {badge,image,title,desc,price} = props
+const MenuFoodContainer = ({badge,image='../src/assets/images/Badge Discount.png',title='some food',desc='delicious',price=0.00}) =>{
+  // let {badge,image,title,desc,price} = props
   
     return(
       // price > 1 &&
