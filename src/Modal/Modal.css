@@ -1,0 +1,33 @@
+.modal_container {
+  width: 300px;
+  height: 100px;
+  background-color: grey;
+  margin: 0 auto;
+}
+.modal_container p {
+  text-align: center;
+  font-size: 24px;
+  padding-top: 1rem;
+}
+
+.modal_Btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal_btn {
+  text-align: center;
+  width: 50%;
+  text-decoration: none;
+  color: white;
+  align-content: center;
+  height: 36px;
+  position: relative;
+  top: 12px;
+}
+.modal_btn_yes {
+  background-color: rgba(0, 128, 0, 0.582);
+}
+.modal_btn_no {
+  background-color: rgba(255, 0, 0, 0.541);
+}
