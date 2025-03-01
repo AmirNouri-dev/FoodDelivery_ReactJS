@@ -1,5 +1,5 @@
 import './Modal.css'
-
+import PropTypes from 'prop-types'
 // export default function Modal({children}) {
 //   return (
 //     <div className='modal_container'>
@@ -22,4 +22,7 @@ export default class Modal extends React.Component {
 }
 Modal.defaultProps = {
     message : 'شما موفق شدید'
+}
+Modal.propTypes = {
+    message : PropTypes.string
 }
