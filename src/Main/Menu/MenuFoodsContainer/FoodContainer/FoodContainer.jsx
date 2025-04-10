@@ -1,12 +1,13 @@
-import "./MenuFoodContainer.css";
-import { foods } from "./../../../../datas";
+import "./FoodContainer.css";
+import { foods } from "../../../../datas";
 
-const MenuFoodContainer = ({
-  badge,
-  image = "../src/assets/images/Badge Discount.png",
+const FoodContainer = ({
+  badge = "",
+  img = "../src/assets/images/Badge Discount.png",
   title = "some food",
   desc = "delicious",
   price = 0.0,
+  category,
 }) => {
   // let {badge,image,title,desc,price} = props
 
@@ -17,7 +18,7 @@ const MenuFoodContainer = ({
         <img src={badge} alt="" />
       </div>
       <div className="menu_food_img">
-        <img src={image} alt="burger" />
+        <img src={img} alt="burger" />
         <div className="menu_food_img_bg"></div>
       </div>
       <div className="menu_food_infos">
@@ -120,4 +121,4 @@ const MenuFoodContainer = ({
   );
 };
 
-export default MenuFoodContainer;
+export default FoodContainer;

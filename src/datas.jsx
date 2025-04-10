@@ -4,7 +4,7 @@ const foods = [
     title: "Coca",
     desc: "Coca Cola drink",
     price: 1,
-    img: "./images/drink/coca.jpg",
+    img: "./../public/images/drink/coca.jpg",
     category: "drink",
   },
   {
@@ -12,7 +12,7 @@ const foods = [
     title: "Fanta",
     desc: "fanta drink",
     price: 1,
-    img: "./images/drink/fanta.jpg",
+    img: "./../public/images/drink/fanta.jpg",
     category: "drink",
   },
   {
@@ -20,7 +20,7 @@ const foods = [
     title: "Water",
     desc: "water drink",
     price: 1,
-    img: "./images/drink/water.jpg",
+    img: "./../public/images/drink/water.jpg",
     category: "drink",
   },
   {
@@ -28,7 +28,7 @@ const foods = [
     title: "Sprite",
     desc: "Sprite drink",
     price: 0.89,
-    img: "./images/drink/sprite.jpg",
+    img: "./../public/images/drink/sprite.jpg",
     category: "drink",
   },
   {
@@ -36,7 +36,7 @@ const foods = [
     title: "Zero Coca",
     desc: "Coca with no suger drink",
     price: 1,
-    img: "./images/drink/zero.jpg",
+    img: "./../public/images/drink/zero.jpg",
     category: "drink",
   },
   {
@@ -44,7 +44,7 @@ const foods = [
     title: "beer",
     desc: "soft beer drink",
     price: 1.69,
-    img: "./images/drink/beer.jpg",
+    img: "./../public/images/drink/beer.jpg",
     category: "drink",
   },
   {
@@ -52,7 +52,7 @@ const foods = [
     title: "2 pieces",
     desc: "2 pieces spicy with salad,bread & sauce",
     price: 7.99,
-    img: "./images/chicken/2teke-tond.jpg",
+    img: "./../public/images/chicken/2teke-tond.jpg",
     category: "chicken",
   },
   {
@@ -60,7 +60,7 @@ const foods = [
     title: "2 pieces",
     desc: "2 pieces normal with salad,bread & sauce",
     price: 7.59,
-    img: "./images/chicken/2teke.jpg",
+    img: "./../public/images/chicken/2teke.jpg",
     category: "chicken",
   },
   {
@@ -68,7 +68,7 @@ const foods = [
     title: "3 pieces",
     desc: "3 pieces normal with salad,bread & sauce",
     price: 9.99,
-    img: "./images/chicken/3teke.jpg",
+    img: "./../public/images/chicken/3teke.jpg",
     category: "chicken",
   },
   {
@@ -76,7 +76,7 @@ const foods = [
     title: "3 pieces",
     desc: "3 pieces spicy with salad,bread & sauce",
     price: 10.59,
-    img: "./images/chicken/3teke-tond.jpg",
+    img: "./../public/images/chicken/3teke-tond.jpg",
     category: "chicken",
   },
   {
@@ -84,7 +84,7 @@ const foods = [
     title: "Shrimps",
     desc: "Fried Shrimps with salad,bread & sauce",
     price: 15.99,
-    img: "./images/chicken/meigoo.jpg",
+    img: "./../public/images/chicken/meigoo.jpg",
     category: "chicken",
   },
   {
@@ -92,7 +92,7 @@ const foods = [
     title: "strips",
     desc: "5 pieces strips with salad,bread & sauce",
     price: 10.99,
-    img: "./images/chicken/5teke-feele.jpg",
+    img: "./../public/images/chicken/5teke-feele.jpg",
     category: "chicken",
   },
   {
@@ -100,7 +100,7 @@ const foods = [
     title: "Margerita",
     desc: "tomato , cheese , basil",
     price: 5.99,
-    img: "./images/pizza/margerita.jpg",
+    img: "./../public/images/pizza/margerita.jpg",
     category: "pizza",
   },
   {
@@ -108,7 +108,7 @@ const foods = [
     title: "chicken",
     desc: "tomato , cheese , chicken",
     price: 7.99,
-    img: "./images/pizza/morq.jpg",
+    img: "./../public/images/pizza/morq.jpg",
     category: "pizza",
   },
   {
@@ -116,7 +116,7 @@ const foods = [
     title: "Turkey",
     desc: "tomato , cheese , turkey",
     price: 10.99,
-    img: "./images/pizza/boqalamon.jpg",
+    img: "./../public/images/pizza/boqalamon.jpg",
     category: "pizza",
   },
   {
@@ -124,7 +124,7 @@ const foods = [
     title: "Pepperoni",
     desc: "tomato , cheese , pepperoni",
     price: 7.99,
-    img: "./images/pizza/peperoni.jpg",
+    img: "./../public/images/pizza/peperoni.jpg",
     category: "pizza",
   },
   {
@@ -132,7 +132,7 @@ const foods = [
     title: "Mushroom",
     desc: "tomato , cheese , mushroom",
     price: 6.99,
-    img: "./images/pizza/qarch.jpg",
+    img: "./../public/images/pizza/qarch.jpg",
     category: "pizza",
   },
   {
@@ -140,7 +140,7 @@ const foods = [
     title: "Steak",
     desc: "tomato , cheese , Steak . black Olive",
     price: 13.99,
-    img: "./images/pizza/stake.jpg",
+    img: "./../public/images/pizza/stake.jpg",
     category: "pizza",
   },
   {
@@ -148,7 +148,7 @@ const foods = [
     title: "Bacon Burger",
     desc: "bread , onion , tomato , cheese , bacon , burger !",
     price: 4.99,
-    img: "./images/burger/bacon-burger.jpg",
+    img: "./../public/images/burger/bacon-burger.jpg",
     category: "burger",
   },
   {
@@ -156,7 +156,7 @@ const foods = [
     title: "Big Burger",
     desc: "bread , onion , tomato , cheese , mushroom ,two big burger !",
     price: 7.59,
-    img: "./images/burger/big-burger.jpg",
+    img: "./../public/images/burger/big-burger.jpg",
     category: "burger",
   },
   {
@@ -164,7 +164,7 @@ const foods = [
     title: "Burger",
     desc: "bread , onion , tomato , burger !",
     price: 3.99,
-    img: "./images/burger/burger.jpg",
+    img: "./../public/images/burger/burger.jpg",
     category: "burger",
   },
   {
@@ -172,7 +172,7 @@ const foods = [
     title: "Cheese Burger",
     desc: "bread , onion , tomato , cheese , burger !",
     price: 4.39,
-    img: "./images/burger/cheese-burger.jpg",
+    img: "./../public/images/burger/cheese-burger.jpg",
     category: "burger",
   },
   {
@@ -180,7 +180,7 @@ const foods = [
     title: "Double Burger",
     desc: "bread , onion , tomato , cheese , two burger !",
     price: 5.99,
-    img: "./images/burger/double-burger.jpg",
+    img: "./../public/images/burger/double-burger.jpg",
     category: "burger",
   },
   {
@@ -188,7 +188,7 @@ const foods = [
     title: "Vegi Burger",
     desc: "bread , onion , tomato , cheese ,vegan burger !",
     price: 4.99,
-    img: "./images/burger/veg-burger.jpg",
+    img: "./../public/images/burger/veg-burger.jpg",
     category: "burger",
   },
   {
@@ -196,7 +196,7 @@ const foods = [
     title: "Brosteka",
     desc: "brosteka !",
     price: 4.99,
-    img: "./images/dessert/brosteka.jpg",
+    img: "./../public/images/dessert/brosteka.jpg",
     category: "dessert",
   },
   {
@@ -204,7 +204,7 @@ const foods = [
     title: "Espinach Salad",
     desc: "Espinach !",
     price: 4.99,
-    img: "./images/dessert/esfenaj.jpg",
+    img: "./../public/images/dessert/esfenaj.jpg",
     category: "dessert",
   },
   {
@@ -212,7 +212,7 @@ const foods = [
     title: "French Fries",
     desc: "french-fries !",
     price: 4.99,
-    img: "./images/dessert/french-fries.jpg",
+    img: "./../public/images/dessert/french-fries.jpg",
     category: "dessert",
   },
   {
@@ -220,7 +220,7 @@ const foods = [
     title: "Pine Salad",
     desc: "pine seed  !",
     price: 4.99,
-    img: "./images/dessert/kaj.jpg",
+    img: "./../public/images/dessert/kaj.jpg",
     category: "dessert",
   },
   {
@@ -228,7 +228,7 @@ const foods = [
     title: "Garlic Bread",
     desc: "bread with garlic flavor !",
     price: 4.99,
-    img: "./images/dessert/nan-sir.jpg",
+    img: "./../public/images/dessert/nan-sir.jpg",
     category: "dessert",
   },
   {
@@ -236,7 +236,7 @@ const foods = [
     title: "Poatato Soup",
     desc: "poatato-soup !",
     price: 4.99,
-    img: "./images/dessert/poatato-soup.jpg",
+    img: "./../public/images/dessert/poatato-soup.jpg",
     category: "dessert",
   },
   {
@@ -244,7 +244,7 @@ const foods = [
     title: "Cesar",
     desc: "cesar salad with chicken !",
     price: 4.99,
-    img: "./images/dessert/sezar.jpg",
+    img: "./../public/images/dessert/sezar.jpg",
     category: "dessert",
   },
   {
@@ -252,54 +252,54 @@ const foods = [
     title: "Cheese Beef Hamburger",
     desc: "fried chicken balls, french fries !",
     price: 5.39,
-    img: "./images/best Seller/Cheese Beef Hamburger.png",
+    img: "./../public/images/best Seller/Cheese Beef Hamburger.png",
     category: "bestSeller",
-    badge: "./",
+    badge: "./../public/images/Badge Discount.png",
   },
   {
     id: 33,
     title: "Combo funny",
     desc: "fried chicken balls, french fries !",
     price: 10.39,
-    img: "./images/best Seller/Combo funny.png",
+    img: "./../public/images/best Seller/Combo funny.png",
     category: "bestSeller",
-    badge: "./",
+    badge: "./../public/images/Badge Discount.png",
   },
   {
     id: 34,
     title: "‌Chicken with Spicy Sauce",
     desc: "chili garlic sauce, black pepper sauce !",
     price: 7.39,
-    img: "./images/best Seller/‌Chicken with Spicy Sauce.png",
+    img: "./../public/images/best Seller/‌Chicken with Spicy Sauce.png",
     category: "bestSeller",
-    badge: "./",
+    badge: "./../public/images/Badge Discount.png",
   },
   {
     id: 35,
     title: "Salad mixed vinegar",
     desc: "Salad, vinegar, tomato !",
     price: 3.39,
-    img: "./images/best Seller/Salad mixed vinegar.png",
+    img: "./../public/images/best Seller/Salad mixed vinegar.png",
     category: "bestSeller",
-    badge: "./",
+    badge: "./../public/images/Badge Discount.png",
   },
   {
     id: 36,
     title: "Chicken burger",
     desc: "fried chicken!",
     price: 5.39,
-    img: "./images/best Seller/Chicken burger.png",
+    img: "./../public/images/best Seller/Chicken burger.png",
     category: "bestSeller",
-    badge: "./",
+    badge: "./../public/images/Badge Discount.png",
   },
   {
     id: 37,
     title: "Lipton",
     desc: "Tea with Ice,Lime and Mint !",
     price: 0.89,
-    img: "./images/best Seller/Lipton.png",
+    img: "./../public/images/best Seller/Lipton.png",
     category: "bestSeller",
-    badge: "./",
+    badge: "./../public/images/Badge Discount.png",
   },
 ];
 
