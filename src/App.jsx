@@ -1,15 +1,14 @@
-
-import './App.css'
-import Header from './Header/Header'
-import Main from './Main/Main'
-import Modal from './Modal/Modal'
+import "./App.css";
+import Header from "./Header/Header";
+import Main from "./Main/Main";
+import Modal from "./Modal/Modal";
 
 function App() {
   return (
     <>
       <Header></Header>
       <Main></Main>
-      <Modal>
+      {/* <Modal>
          
             <div className="modal_Btns">
               <a href="#" className="modal_btn_yes modal_btn">Yes</a>
@@ -22,9 +21,9 @@ function App() {
               <a href="#" className="modal_btn_yes modal_btn">Yes</a>
               <a href="#" className="modal_btn_no modal_btn">No</a>
             </div>
-      </Modal>
+      </Modal> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
