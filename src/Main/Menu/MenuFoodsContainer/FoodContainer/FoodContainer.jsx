@@ -1,5 +1,4 @@
 import "./FoodContainer.css";
-import { foods } from "../../../../datas";
 
 const FoodContainer = ({
   badge = "",
@@ -14,6 +13,7 @@ const FoodContainer = ({
   return (
     // price > 1 &&
     <div className="menu_food_container">
+      {/* {console.log(title)} */}
       <div className="discount_badge">
         <img src={badge} alt="" />
       </div>

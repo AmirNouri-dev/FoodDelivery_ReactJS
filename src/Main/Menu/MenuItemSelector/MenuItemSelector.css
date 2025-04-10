@@ -1,6 +1,6 @@
 .menu_item_selector {
   display: grid;
-  grid-auto-columns: 180px;
+  grid-auto-columns: 160px;
   grid-auto-flow: column;
   overflow-x: auto;
   gap: 1.2rem;
