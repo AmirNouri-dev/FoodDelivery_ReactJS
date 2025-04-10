@@ -2,8 +2,8 @@ import React from "react";
 import "./MenuFoodsContainer.css";
 import FoodContainer from "./FoodContainer/FoodContainer";
 import { foods } from "../../../datas";
-
-export default function MenuFoodsContainer() {
+// import { currentCate } from "../MenuItemSelector/MenuItemSelector";
+export default function MenuFoodsContainer({ children }) {
   // const allFoods = [
   //   {
   //     id: 1,
@@ -48,10 +48,12 @@ export default function MenuFoodsContainer() {
   // ];
   return (
     <div className="menu_foods_container">
-      {foods.map((food) => (
+      {children}
+      {/* {console.log("menu_foods_container", currentCate)} */}
+      {/* {foods.map((food) => (
         // console.log(food);
         <FoodContainer key={food.id} {...food} />
-      ))}
+      ))} */}
       {/* <MenuFoodContainer {...allFoods[0]} />
       <MenuFoodContainer {...allFoods[1]} />
       <MenuFoodContainer {...allFoods[2]} />

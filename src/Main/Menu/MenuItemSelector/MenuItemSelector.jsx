@@ -1,8 +1,10 @@
 import "./MenuItemSelector.css";
 import { foods } from "../../../datas";
 import { useEffect, useRef, useState } from "react";
+import FoodContainer from "../MenuFoodsContainer/FoodContainer/FoodContainer";
+import MenuFoodsContainer from "../MenuFoodsContainer/MenuFoodsContainer";
 
-export default function MenuItemSelector(params) {
+function MenuItemSelector() {
   const [currentCate, setCurrentCate] = useState(null);
   const btnRef = useRef([]);
   const categoris = Array.from(new Set(foods.map((food) => food.category)));
@@ -16,26 +18,33 @@ export default function MenuItemSelector(params) {
       btn.classList.remove("active");
     });
     btnRef.current[index].classList.add("active");
-    // setCurrentCate(index);
-
-    console.log(btnRef.current[index]);
+    setCurrentCate(categoris[index]);
   };
   return (
-    <div className="menu_item_selector">
-      {categoris.map((category, index) => (
-        <button
-          key={index}
-          ref={(el) => (btnRef.current[index] = el)}
-          className="menu_item_selector_btn"
-          onClick={() => categorySelectorHandler(index)}
-        >
-          {category}
-        </button>
-      ))}
-    </div>
+    <>
+      <div className="menu_item_selector">
+        {categoris.map((category, index) => (
+          <button
+            key={index}
+            ref={(el) => (btnRef.current[index] = el)}
+            className="menu_item_selector_btn"
+            onClick={() => categorySelectorHandler(index)}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
+      <MenuFoodsContainer>
+        {foods
+          .filter((food) => food.category === currentCate)
+          .map((food) => (
+            <FoodContainer {...food} key={food.id} />
+          ))}
+      </MenuFoodsContainer>
+    </>
   );
 }
-
+export { MenuItemSelector };
 // let x = [
 //  <div className="menu_item_selector">
 //   <button className="menu_item_selector_btn" data-index="bestSeller">
