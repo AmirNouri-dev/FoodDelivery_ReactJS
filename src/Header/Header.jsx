@@ -1,14 +1,13 @@
-import "./Header.css"
-import Navigation from "./Navigation/Navigation"
-import Banner from "./Banner/Banner"
+import "./Header.css";
+import Navigation from "./Navigation/Navigation";
+import Banner from "./Banner/Banner";
 
 function Header() {
-    return(
-        <div className='container'>
-<Navigation></Navigation>
-<Banner></Banner>
-        </div>
-    )
-    
+  return (
+    <div className="container">
+      <Navigation />
+      <Banner />
+    </div>
+  );
 }
-export default Header
+export default Header;

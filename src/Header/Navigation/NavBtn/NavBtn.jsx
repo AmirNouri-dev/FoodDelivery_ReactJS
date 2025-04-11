@@ -1,10 +1,15 @@
-import "./NavBtn.css"
+import "./NavBtn.css";
+import { Link } from "react-router-dom";
 function NavBtn() {
-    return(
-        <div className="nav_buttons">
-              <a href="./signin.html" className="nav_btn">sign in</a>
-              <a href="./login.html" className="nav_btn">log in</a>
-            </div>
-    )
+  return (
+    <div className="nav_buttons">
+      <Link to={"/signin"} className="nav_btn">
+        <p>sign in</p>
+      </Link>
+      <Link to={"/login"} className="nav_btn">
+        <p>log in</p>
+      </Link>
+    </div>
+  );
 }
-export default NavBtn
+export default NavBtn;

@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/Poppins-Regular.woff) format("woff");
+}
+body {
+  font-family: poppins;
+
+  /* padding-bottom: 10rem; */
+}
+.Signincontainer {
+  width: 100%;
+  height: 1000px;
+  background-color: #c90000;
+}
+.signin_container {
+  width: 500px;
+  height: 600px;
+  padding: 10px 35px 35px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.signin {
+  position: relative;
+  margin-top: 1rem;
+}
+.signin_logo {
+  text-align: center;
+}
+.signin_logo img {
+  width: 100px;
+}
+
+.signin svg {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  width: 32px;
+  color: #fff;
+  height: auto;
+}
+.signin input {
+  background-color: transparent;
+  font-family: "poppins";
+  font-size: 20px;
+  font-weight: 300;
+  width: 100%;
+  height: 70px;
+  color: #fff;
+  padding: 0 4rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  border: 1px solid #fff;
+  outline: none;
+}
+.signin input::placeholder {
+  color: #fff;
+}
+.signin_container button {
+  display: block;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 1px 1px #000;
+  font-family: "poppins";
+  font-size: 1.5rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+/* .signin_container p {
+    font-size: 1.5rem;
+    color: #ffe252;
+    margin-top: 0.5rem;
+    display: none;
+  } */
