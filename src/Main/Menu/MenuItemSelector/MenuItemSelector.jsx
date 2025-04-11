@@ -1,15 +1,13 @@
 import "./MenuItemSelector.css";
-import { foods } from "../../../datas";
+
 import { useEffect, useRef, useState } from "react";
-import FoodContainer from "../MenuFoodsContainer/FoodContainer/FoodContainer";
-import MenuFoodsContainer from "../MenuFoodsContainer/MenuFoodsContainer";
 
 // const categoris = Array.from(new Set(foods.map((food) => food.category)));
 // categoris.unshift("all");
 // below code replce with upper codes
 // const categoris = ["all", ...new Set(foods.map((food) => food.category))];
 
-const MenuItemSelector = ({ categories }) => {
+const MenuItemSelector = ({ categories, selectedCategory }) => {
   const [currentCate, setCurrentCate] = useState("all");
 
   return (
@@ -22,7 +20,10 @@ const MenuItemSelector = ({ categories }) => {
               ? "menu_item_selector_btn active"
               : "menu_item_selector_btn"
           }
-          onClick={() => setCurrentCate(category)}
+          onClick={() => {
+            setCurrentCate(category);
+            selectedCategory(category);
+          }}
         >
           {category}
         </button>

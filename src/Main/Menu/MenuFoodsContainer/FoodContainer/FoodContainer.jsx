@@ -7,17 +7,20 @@ const FoodContainer = ({ allFoods }) => {
     <>
       {allFoods.map((food) => {
         return (
-          <div className="menu_food_container">
+          <div key={food.id} className="menu_food_container">
             <div className="discount_badge">
-              <img src={food.badge} alt="" />
+              <img src={food.badge || ""} alt="" />
             </div>
             <div className="menu_food_img">
-              <img src={food.img} alt="burger" />
+              <img
+                src={food.img || "../src/assets/images/Badge Discount.png"}
+                alt="burger"
+              />
               <div className="menu_food_img_bg"></div>
             </div>
             <div className="menu_food_infos">
-              <h5>{food.title}</h5>
-              <p>{food.desc}</p>
+              <h5>{food.title || "some food"}</h5>
+              <p>{food.desc || "delicious"}</p>
               <div className="menu_food_infos_score">
                 <svg
                   width="20"
@@ -83,7 +86,7 @@ const FoodContainer = ({ allFoods }) => {
               </div>
             </div>
             <div className="menu_food_price">
-              <div className="menu_food_price_cost">{food.price}$</div>
+              <div className="menu_food_price_cost">{food.price || 0}$</div>
               <button className="menu_food_price_order">
                 <svg
                   width="24"
@@ -117,12 +120,6 @@ const FoodContainer = ({ allFoods }) => {
     </>
   );
 };
-FoodContainer.defaultprops = {
-  badge: "",
-  img: "../src/assets/images/Badge Discount.png",
-  title: "some food",
-  desc: "delicious",
-  price: 0.0,
-};
+FoodContainer.defaultprops = {};
 
 export default FoodContainer;
