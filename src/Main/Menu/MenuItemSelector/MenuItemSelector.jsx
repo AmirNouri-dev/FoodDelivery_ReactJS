@@ -4,47 +4,33 @@ import { useEffect, useRef, useState } from "react";
 import FoodContainer from "../MenuFoodsContainer/FoodContainer/FoodContainer";
 import MenuFoodsContainer from "../MenuFoodsContainer/MenuFoodsContainer";
 
-function MenuItemSelector() {
-  const [currentCate, setCurrentCate] = useState(null);
-  const btnRef = useRef([]);
-  const categoris = Array.from(new Set(foods.map((food) => food.category)));
+// const categoris = Array.from(new Set(foods.map((food) => food.category)));
+// categoris.unshift("all");
+// below code replce with upper codes
+// const categoris = ["all", ...new Set(foods.map((food) => food.category))];
 
-  useEffect(() => {
-    btnRef.current[0].classList.add("active");
-  }, []);
+const MenuItemSelector = ({ categories }) => {
+  const [currentCate, setCurrentCate] = useState("all");
 
-  const categorySelectorHandler = (index) => {
-    btnRef.current.forEach((btn) => {
-      btn.classList.remove("active");
-    });
-    btnRef.current[index].classList.add("active");
-    setCurrentCate(categoris[index]);
-  };
   return (
-    <>
-      <div className="menu_item_selector">
-        {categoris.map((category, index) => (
-          <button
-            key={index}
-            ref={(el) => (btnRef.current[index] = el)}
-            className="menu_item_selector_btn"
-            onClick={() => categorySelectorHandler(index)}
-          >
-            {category}
-          </button>
-        ))}
-      </div>
-      <MenuFoodsContainer>
-        {foods
-          .filter((food) => food.category === currentCate)
-          .map((food) => (
-            <FoodContainer {...food} key={food.id} />
-          ))}
-      </MenuFoodsContainer>
-    </>
+    <div className="menu_item_selector">
+      {categories.map((category, index) => (
+        <button
+          key={index}
+          className={
+            category === currentCate
+              ? "menu_item_selector_btn active"
+              : "menu_item_selector_btn"
+          }
+          onClick={() => setCurrentCate(category)}
+        >
+          {category}
+        </button>
+      ))}
+    </div>
   );
-}
-export { MenuItemSelector };
+};
+export default MenuItemSelector;
 // let x = [
 //  <div className="menu_item_selector">
 //   <button className="menu_item_selector_btn" data-index="bestSeller">
@@ -215,3 +201,31 @@ export { MenuItemSelector };
 //     </div>
 //   </button>
 // </div>]
+// const [currentCate, setCurrentCate] = useState("drink");
+//   const btnRef = useRef([]);
+
+//   useEffect(() => {
+//     btnRef.current[1].classList.add("active");
+//   }, []);
+
+//   const categorySelectorHandler = (index) => {
+//     btnRef.current.forEach((btn) => {
+//       btn.classList.remove("active");
+//     });
+//     btnRef.current[index].classList.add("active");
+//     setCurrentCate(categoris[index]);
+//   };
+// <MenuFoodsContainer>
+//         {foods
+//           .filter((food) => {
+//             if (food.category === currentCate) {
+//               return food;
+//             } else if (currentCate === "all") {
+//               return food;
+//             }
+//           })
+//           .map((food) => (
+//             <FoodContainer {...food} key={food.id} />
+//           ))}
+//       </MenuFoodsContainer>
+//     </>

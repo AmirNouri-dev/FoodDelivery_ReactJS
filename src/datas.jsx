@@ -5,7 +5,7 @@ const foods = [
     desc: "Coca Cola drink",
     price: 1,
     img: "./../public/images/drink/coca.jpg",
-    category: "all",
+    category: "drink",
   },
   {
     id: 2,
