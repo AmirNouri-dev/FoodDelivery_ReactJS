@@ -26,8 +26,15 @@
   top: 10%;
   left: 23%;
   z-index: 1;
-  display: block;
+  display: none;
   transition: all 200ms ease-in;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+}
+.shopping_list.active {
+  display: block;
 }
 .total_item_shopping_list {
   display: flex;

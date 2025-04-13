@@ -11,9 +11,12 @@ import { foods } from "./datas";
 function App() {
   const router = useRoutes(routes);
   const [allFoods, setAllFoods] = useState(foods);
+  const [isShowBag, setIsShowBag] = useState(true);
   return (
     <>
-      <foodsContext.Provider value={{ allFoods, setAllFoods }}>
+      <foodsContext.Provider
+        value={{ allFoods, setAllFoods, isShowBag, setIsShowBag }}
+      >
         <Cart />
         {router}
       </foodsContext.Provider>
