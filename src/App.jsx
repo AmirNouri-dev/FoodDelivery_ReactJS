@@ -3,10 +3,16 @@ import Navigation from "./Header/Navigation/Navigation";
 import Modal from "./Modal/Modal";
 import routes from "./routes";
 import { useRoutes } from "react-router-dom";
+import Cart from "./Cart/Cart";
 
 function App() {
   const router = useRoutes(routes);
-  return <>{router}</>;
+  return (
+    <>
+      <Cart />
+      {router}
+    </>
+  );
 }
 
 export default App;
