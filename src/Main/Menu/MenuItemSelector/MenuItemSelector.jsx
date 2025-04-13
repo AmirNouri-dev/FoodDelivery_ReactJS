@@ -1,6 +1,7 @@
 import "./MenuItemSelector.css";
+import foodsContext from "../../../contexts/FoodContext";
 
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 
 // const categoris = Array.from(new Set(foods.map((food) => food.category)));
 // categoris.unshift("all");
@@ -9,6 +10,7 @@ import { useEffect, useRef, useState } from "react";
 
 const MenuItemSelector = ({ categories, selectedCategory }) => {
   const [currentCate, setCurrentCate] = useState("all");
+  const contextData = useContext(foodsContext);
 
   return (
     <div className="menu_item_selector">

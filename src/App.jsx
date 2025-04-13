@@ -4,13 +4,19 @@ import Modal from "./Modal/Modal";
 import routes from "./routes";
 import { useRoutes } from "react-router-dom";
 import Cart from "./Cart/Cart";
+import foodsContext from "./contexts/FoodContext";
+import { useState } from "react";
+import { foods } from "./datas";
 
 function App() {
   const router = useRoutes(routes);
+  const [allFoods, setAllFoods] = useState(foods);
   return (
     <>
-      <Cart />
-      {router}
+      <foodsContext.Provider value={{ allFoods, setAllFoods }}>
+        <Cart />
+        {router}
+      </foodsContext.Provider>
     </>
   );
 }

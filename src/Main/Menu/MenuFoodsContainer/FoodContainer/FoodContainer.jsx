@@ -1,15 +1,18 @@
 import "./FoodContainer.css";
 import { GiShoppingCart } from "react-icons/gi";
 import { FaStar } from "react-icons/fa";
+import foodsContext from "../../../../contexts/FoodContext";
+import { useContext } from "react";
 
-const FoodContainer = ({ allFoods }) => {
+const FoodContainer = () => {
+  const contextData = useContext(foodsContext);
   // let {badge,image,title,desc,price} = props
   const orderHandler = () => {
     console.log("order");
   };
   return (
     <>
-      {allFoods.map((food) => {
+      {contextData.allFoods.map((food) => {
         return (
           <div key={food.id} className="menu_food_container">
             <div className="discount_badge">
