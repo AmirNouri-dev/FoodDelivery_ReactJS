@@ -17,14 +17,15 @@
   height: 24px;
   color: #fff;
   border-radius: 100%;
-  z-index: 1;
-  top: 5%;
-  left: 22%;
-  display: none;
+  z-index: 999;
 }
-.nav_basket svg {
-  width: 70%;
+.basket_count.active {
+  display: block;
+  top: 7%;
+  left: 25%;
 }
-.nav_basket path {
-  fill: var(--color-7D7C7C);
+.nav_basket_icon {
+  color: var(--color-7D7C7C);
+  width: 4.5rem;
+  height: 4.5rem;
 }
