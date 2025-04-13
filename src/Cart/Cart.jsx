@@ -30,6 +30,16 @@ export default function Cart() {
     });
     contextData.setUserOrdersCount((prev) => prev + 1);
   };
+
+  const removeFoodHandler = (item) => {
+    console.log(item);
+    let userCart = [...contextData.userCart];
+    userCart = userCart.filter((food) => {
+      return food.title !== item.title;
+    });
+    contextData.setUserCart(userCart);
+    contextData.setUserOrdersCount((prev) => prev - item.count);
+  };
   return (
     <div>
       <aside
@@ -38,7 +48,10 @@ export default function Cart() {
         <div className="cart">
           <div className="total_item_shopping_list">
             <div>
-              total items : <span className="total__items"></span>
+              total items :{" "}
+              <span className="total__items">
+                {contextData.userOrdersCount}
+              </span>
             </div>
 
             <a href="#" onClick={closeCartHandler}>
@@ -70,7 +83,10 @@ export default function Cart() {
                     onClick={() => addItemCount(item)}
                   />
                 </div>
-                <div class="View_item_remove">
+                <div
+                  class="View_item_remove"
+                  onClick={() => removeFoodHandler(item)}
+                >
                   <FaRegTrashAlt />
                 </div>
               </div>

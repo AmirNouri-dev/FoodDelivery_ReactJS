@@ -40,7 +40,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1rem;
 }
 .total_item_shopping_list div:first-child {
   color: #fff;
@@ -102,7 +101,8 @@
   overflow-y: auto;
 }
 .View_item_remove {
-  background-color: transparent;
+  font-size: 26px;
+  cursor: pointer;
 }
 .View_item_remove svg {
   z-index: -1;
