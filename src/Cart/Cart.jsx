@@ -14,13 +14,13 @@ export default function Cart() {
   };
   const minusItemCount = (item) => {
     contextData.userCart.some((food) => {
-      if (food.title === item.title) {
+      if (food.title === item.title && item.count > 1) {
         item.count -= 1;
         contextData.setOrdersPrice((prev) => prev - item.price);
+        contextData.setUserOrdersCount((prev) => prev - 1);
         return;
       }
     });
-    contextData.setUserOrdersCount((prev) => prev - 1);
   };
   const addItemCount = (item) => {
     contextData.userCart.some((food) => {
