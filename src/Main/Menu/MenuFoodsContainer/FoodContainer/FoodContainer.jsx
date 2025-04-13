@@ -17,6 +17,7 @@ const FoodContainer = () => {
       userCart.some((item) => {
         if (item.title === food.title) {
           item.count += 1;
+          contextData.setOrdersPrice((prev) => prev + item.price);
           return;
         }
       });
@@ -32,6 +33,7 @@ const FoodContainer = () => {
       };
       console.log(newFoodObj);
       contextData.setUserCart((prev) => [...prev, newFoodObj]);
+      contextData.setOrdersPrice((prev) => prev + food.price);
     }
     contextData.setUserOrdersCount((prev) => prev + 1);
   };

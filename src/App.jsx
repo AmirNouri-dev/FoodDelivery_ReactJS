@@ -14,10 +14,8 @@ function App() {
   const [isShowBag, setIsShowBag] = useState(false);
   const [userCart, setUserCart] = useState([]);
   const [userOrdersCount, setUserOrdersCount] = useState(0);
-  const [eachItemInBagCount, setEachItemInBagCount] = useState([
-    userCart.title,
-    userCart.count,
-  ]);
+  const [ordersPrice, setOrdersPrice] = useState(0);
+
   return (
     <>
       <foodsContext.Provider
@@ -30,7 +28,8 @@ function App() {
           setUserCart,
           userOrdersCount,
           setUserOrdersCount,
-          eachItemInBagCount,
+          ordersPrice,
+          setOrdersPrice,
         }}
       >
         <Cart />

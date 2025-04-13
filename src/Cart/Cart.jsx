@@ -16,6 +16,7 @@ export default function Cart() {
     contextData.userCart.some((food) => {
       if (food.title === item.title) {
         item.count -= 1;
+        contextData.setOrdersPrice((prev) => prev - item.price);
         return;
       }
     });
@@ -25,6 +26,7 @@ export default function Cart() {
     contextData.userCart.some((food) => {
       if (food.title === item.title) {
         item.count += 1;
+        contextData.setOrdersPrice((prev) => prev + item.price);
         return;
       }
     });
@@ -38,7 +40,12 @@ export default function Cart() {
       return food.title !== item.title;
     });
     contextData.setUserCart(userCart);
+    contextData.setOrdersPrice((prev) => prev - item.price * item.count);
     contextData.setUserOrdersCount((prev) => prev - item.count);
+  };
+
+  const changeCountHandler = (item) => {
+    console.log(item.count);
   };
   return (
     <div>
@@ -77,7 +84,12 @@ export default function Cart() {
                     className=" count_btn "
                     onClick={() => minusItemCount(item)}
                   />
-                  <span className="item_count">{item.count}</span>
+                  <div
+                    className="item_count"
+                    onChange={() => changeCountHandler(item)}
+                  >
+                    {item.count}
+                  </div>
                   <FaPlus
                     className=" count_btn"
                     onClick={() => addItemCount(item)}
@@ -95,7 +107,11 @@ export default function Cart() {
           <div className="line"></div>
           <div className="total_price_shopping_list">
             <div>
-              total price : <span className="total__price"></span>$
+              total price :{" "}
+              <span className="total__price">
+                {contextData.ordersPrice.toFixed(2)}
+              </span>
+              $
             </div>
           </div>
         </div>
