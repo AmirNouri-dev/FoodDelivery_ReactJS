@@ -4,7 +4,9 @@ import { FaStar } from "react-icons/fa";
 
 const FoodContainer = ({ allFoods }) => {
   // let {badge,image,title,desc,price} = props
-
+  const orderHandler = () => {
+    console.log("order");
+  };
   return (
     <>
       {allFoods.map((food) => {
@@ -35,7 +37,7 @@ const FoodContainer = ({ allFoods }) => {
             </div>
             <div className="menu_food_price">
               <div className="menu_food_price_cost">{food.price || 0}$</div>
-              <button className="menu_food_order-btn">
+              <button className="menu_food_order-btn" onClick={orderHandler}>
                 <GiShoppingCart className="menu_food_order-btn-icon" />
               </button>
             </div>

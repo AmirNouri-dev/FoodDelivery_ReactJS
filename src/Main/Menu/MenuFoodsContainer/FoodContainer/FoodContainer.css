@@ -76,6 +76,7 @@
   background-color: var(--color-C90000);
   padding: 8px;
   border-radius: 8px;
+  cursor: pointer;
 }
 .menu_food_order-btn-icon {
   color: #fff;
