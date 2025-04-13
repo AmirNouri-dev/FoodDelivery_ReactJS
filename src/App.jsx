@@ -11,8 +11,13 @@ import { foods } from "./datas";
 function App() {
   const router = useRoutes(routes);
   const [allFoods, setAllFoods] = useState(foods);
-  const [isShowBag, setIsShowBag] = useState(true);
+  const [isShowBag, setIsShowBag] = useState(false);
   const [userCart, setUserCart] = useState([]);
+  const [userOrdersCount, setUserOrdersCount] = useState(0);
+  const [eachItemInBagCount, setEachItemInBagCount] = useState([
+    userCart.title,
+    userCart.count,
+  ]);
   return (
     <>
       <foodsContext.Provider
@@ -23,6 +28,9 @@ function App() {
           setIsShowBag,
           userCart,
           setUserCart,
+          userOrdersCount,
+          setUserOrdersCount,
+          eachItemInBagCount,
         }}
       >
         <Cart />

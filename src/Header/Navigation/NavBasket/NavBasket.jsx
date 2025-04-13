@@ -14,7 +14,7 @@ function NavBasket() {
         <img src="../public/images/lgo.png" alt="lgo" />
       </div>
       <a href="#" className="nav_basket" onClick={showBagHandler}>
-        <div className="basket_count active">1</div>
+        <div className="basket_count active">{contextData.userOrdersCount}</div>
         <AiOutlineShoppingCart className="nav_basket_icon" />
       </a>
     </div>

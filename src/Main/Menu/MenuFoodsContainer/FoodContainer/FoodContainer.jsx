@@ -9,16 +9,31 @@ const FoodContainer = () => {
   // let {badge,image,title,desc,price} = props
   const orderHandler = (food) => {
     console.log("order");
-    let newFoodObj = {
-      id: contextData.userCart.length + 1,
-      title: food.title,
-      desc: food.desc,
-      price: food.price,
-      img: food.img,
-      badge: food.badge || "",
-    };
-    console.log(newFoodObj);
-    contextData.setUserCart((prev) => [...prev, newFoodObj]);
+    let isFoodInBag = contextData.userCart.some((item) => {
+      return item.title === food.title;
+    });
+    if (isFoodInBag) {
+      let userCart = [...contextData.userCart];
+      userCart.some((item) => {
+        if (item.title === food.title) {
+          item.count += 1;
+          return;
+        }
+      });
+    } else {
+      let newFoodObj = {
+        id: contextData.userCart.length + 1,
+        title: food.title,
+        desc: food.desc,
+        price: food.price,
+        img: food.img,
+        badge: food.badge || "",
+        count: 1,
+      };
+      console.log(newFoodObj);
+      contextData.setUserCart((prev) => [...prev, newFoodObj]);
+    }
+    contextData.setUserOrdersCount((prev) => prev + 1);
   };
   return (
     <>
