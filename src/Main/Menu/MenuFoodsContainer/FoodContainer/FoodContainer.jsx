@@ -7,8 +7,18 @@ import { useContext } from "react";
 const FoodContainer = () => {
   const contextData = useContext(foodsContext);
   // let {badge,image,title,desc,price} = props
-  const orderHandler = () => {
+  const orderHandler = (food) => {
     console.log("order");
+    let newFoodObj = {
+      id: contextData.userCart.length + 1,
+      title: food.title,
+      desc: food.desc,
+      price: food.price,
+      img: food.img,
+      badge: food.badge || "",
+    };
+    console.log(newFoodObj);
+    contextData.setUserCart((prev) => [...prev, newFoodObj]);
   };
   return (
     <>
@@ -40,7 +50,10 @@ const FoodContainer = () => {
             </div>
             <div className="menu_food_price">
               <div className="menu_food_price_cost">{food.price || 0}$</div>
-              <button className="menu_food_order-btn" onClick={orderHandler}>
+              <button
+                className="menu_food_order-btn"
+                onClick={() => orderHandler(food)}
+              >
                 <GiShoppingCart className="menu_food_order-btn-icon" />
               </button>
             </div>

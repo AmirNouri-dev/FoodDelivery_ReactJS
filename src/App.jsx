@@ -12,10 +12,18 @@ function App() {
   const router = useRoutes(routes);
   const [allFoods, setAllFoods] = useState(foods);
   const [isShowBag, setIsShowBag] = useState(true);
+  const [userCart, setUserCart] = useState([]);
   return (
     <>
       <foodsContext.Provider
-        value={{ allFoods, setAllFoods, isShowBag, setIsShowBag }}
+        value={{
+          allFoods,
+          setAllFoods,
+          isShowBag,
+          setIsShowBag,
+          userCart,
+          setUserCart,
+        }}
       >
         <Cart />
         {router}
