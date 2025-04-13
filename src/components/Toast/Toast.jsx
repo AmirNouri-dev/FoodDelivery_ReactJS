@@ -1,33 +1,27 @@
 import React, { useContext } from "react";
-import productsContext from "../../Contexts/ProductsContext";
+import foodsContext from "../../contexts/FoodContext";
 import "./Toast.css";
+import { IoIosClose } from "react-icons/io";
 
 function Toast() {
-  const contextData = useContext(productsContext);
+  const contextData = useContext(foodsContext);
   const closeBtnHandler = () => {
     contextData.setIsShowToast(false);
   };
   return (
     <div>
-      <div className=" toast-container position-fixed bottom-0 me-4 end-0 mb4">
-        <div
-          //   className={
-          //     contextData.isShowToast
-          //       ? "toast align-items-center text-white bg-danger show"
-          //       : "toast align-items-center text-white bg-danger"
-          //   }
-          className={`${
-            contextData.isShowToast ? "show" : ""
-          } toast align-items-center text-white bg-danger `}
-        >
+      <div className=" toast-container">
+        <div className={`${contextData.isShowToast ? "active" : ""} toast`}>
           {/*add show class to show component */}
-          <div className="d-flex align-items-center justify-content-between">
+          <div className="toast_section">
             <button
               type="button"
-              className="btn-close btn-close-white ms-3"
+              className="btn_close"
               onClick={closeBtnHandler}
-            ></button>
-            <div dir="rtl" className="toast-body fs-6">
+            >
+              <IoIosClose className="btn_close_icon" />
+            </button>
+            <div dir="rtl" className="toast_body">
               محصول با موفقیت به سبد اضافه شد
             </div>
           </div>

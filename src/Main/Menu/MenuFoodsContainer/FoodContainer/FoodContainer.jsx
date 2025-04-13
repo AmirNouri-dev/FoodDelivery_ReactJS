@@ -9,6 +9,10 @@ const FoodContainer = () => {
   // let {badge,image,title,desc,price} = props
   const orderHandler = (food) => {
     console.log("order");
+    contextData.setIsShowToast(true);
+    setTimeout(() => {
+      contextData.setIsShowToast(false);
+    }, 4000);
     let isFoodInBag = contextData.userCart.some((item) => {
       return item.title === food.title;
     });

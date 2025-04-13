@@ -7,6 +7,7 @@ import Cart from "./Cart/Cart";
 import foodsContext from "./contexts/FoodContext";
 import { useState } from "react";
 import { foods } from "./datas";
+import Toast from "./components/Toast/Toast";
 
 function App() {
   const router = useRoutes(routes);
@@ -15,6 +16,7 @@ function App() {
   const [userCart, setUserCart] = useState([]);
   const [userOrdersCount, setUserOrdersCount] = useState(0);
   const [ordersPrice, setOrdersPrice] = useState(0);
+  const [isShowToast, setIsShowToast] = useState(false);
 
   return (
     <>
@@ -30,9 +32,12 @@ function App() {
           setUserOrdersCount,
           ordersPrice,
           setOrdersPrice,
+          isShowToast,
+          setIsShowToast,
         }}
       >
         <Cart />
+        <Toast />
         {router}
       </foodsContext.Provider>
     </>
