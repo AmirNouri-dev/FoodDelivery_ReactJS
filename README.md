@@ -34,7 +34,7 @@ npm run dev
 #ساختار پروژه
 
 <div dir='ltr'>
-<pre>
+
 ```bash
 
 |-food-delivery-react/
@@ -58,7 +58,6 @@ npm run dev
 
 ```
 
-</pre>
 </div>
 </div>
 ```
