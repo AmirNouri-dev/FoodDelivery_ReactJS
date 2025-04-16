@@ -37,7 +37,7 @@ npm run dev
 
 
 
-```bash
+```plaintext
 
 |-food-delivery-react/
 |--src
