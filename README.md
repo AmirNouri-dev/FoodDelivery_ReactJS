@@ -35,8 +35,16 @@ npm run dev
 
 #ساختار پروژه
 
+<<<<<<< HEAD
 ```plaintext
 
+=======
+
+
+<div dir='ltr'>
+  <pre>
+```plaintext
+>>>>>>> fed749227d2884e885bd828e439e79d8ccdb438f
 |-food-delivery-react/
 |--src
 |---components #reusable components
@@ -50,12 +58,18 @@ npm run dev
 |----home
 |----login
 |----signin
-|---assests #include fonts
+|---assets #include fonts
 |--public
-|--- images #all images used in app
+|--- images #all images used in App
 |--app.js #نقطه ورود اپ و تنظیم مسیرها
 |-- README.md
-
 ```
+  </pre>
+</div>
+
 
 </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> fed749227d2884e885bd828e439e79d8ccdb438f
