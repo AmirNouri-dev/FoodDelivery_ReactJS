@@ -1,7 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Login.css";
+import { useNavigate, Link } from "react-router-dom";
 
 function Login() {
+  const [userName, setUserName] = useState("");
+  const [password, setPassword] = useState("");
+  const [isShowHint, setIsShowHint] = useState(false);
+
+  const navigate = useNavigate();
+  const loginHandler = () => {
+    if (userName === "admin" && password === "12345") {
+      alert("log in");
+      navigate("/");
+    } else if (userName === "admin" && password !== "12345") {
+      alert("password is incorrect !");
+      setIsShowHint(true);
+    } else if (userName !== "admin" && password === "12345") {
+      alert("username is incorrect !");
+      setIsShowHint(true);
+    } else {
+      alert("username and password both are incorrect !");
+      setIsShowHint(true);
+    }
+  };
+  const inputUserNameHandler = (e) => {
+    console.log(e);
+    setUserName(e.target.value);
+  };
+  const inputPasswordHandler = (e) => {
+    setPassword(e.target.value);
+  };
+  const submitHandler = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className="Logincontainer">
       <div className="login_container">
@@ -10,7 +42,7 @@ function Login() {
           <div className="lang">Fa</div>
         </div>
         {/*form */}
-        <form action="" id="login_form">
+        <form action="" id="login_form" onSubmit={submitHandler}>
           <div className="login_logo">
             <img
               src="./images/png-clipart-mcdonald-s-museum-logo-mcdonalds 1.png"
@@ -43,6 +75,8 @@ function Login() {
               autofocus
               type="text"
               placeholder="USERNAME"
+              value={userName}
+              onChange={inputUserNameHandler}
               id="login_username"
               required
               autocomplete="off"
@@ -72,6 +106,8 @@ function Login() {
 
             <input
               type="password"
+              value={password}
+              onChange={inputPasswordHandler}
               id="login_password"
               placeholder="PASSWORD"
               required
@@ -81,13 +117,16 @@ function Login() {
               <i className="fa fa-eye-slash"></i>
             </div>
           </div>
-          <button>LOGIN</button>
+          <button onClick={loginHandler}>LOGIN</button>
           <span className="message">
-            Not registered? <a href="./signin.html">Create an account</a>
+            Not registered?{" "}
+            <Link to="/signin">
+              <a>Create an account</a>
+            </Link>
           </span>
-          <p>
-            Username or Password is Incorrect!
-            <span>Hint = user : " admin " *** pass : " admin " </span>
+          <p className={`${isShowHint ? "hint" : ""}`}>
+            <span>hint (user : " admin ") </span>
+            <span>hint (pass : " 12345 ") </span>
           </p>
         </form>
       </div>
