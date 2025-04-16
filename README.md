@@ -34,23 +34,29 @@ npm run dev
 #ساختار پروژه
 
 <div dir='ltr'>
-```bash
-food-delivery-react
-|-src
-    |-components #reusable components
-        |-Cart
-        |-Header
-        |-Main
-        |-Modal
-        |-Toast
-    |-contexts
-|-pages #main pages(home,login,sigin,etc.)
-    |-home
-    |-login
-    |-signin
-|-assests #include fonts
-|-public
-    |- images #all images used in app
-|-app.js #نقطه ورود اپ و تنظیم مسیرها
-|- README.md
-```
+<pre>
+{`
+
+|-food-delivery-react/
+|--src
+|---components #reusable components
+|----Cart
+|----Header
+|----Main
+|----Modal
+|----Toast
+|---contexts
+|---pages #main pages(home,login,sigin,etc.)
+|----home
+|----login
+|----signin
+|---assests #include fonts
+|--public
+|--- images #all images used in app
+|--app.js #نقطه ورود اپ و تنظیم مسیرها
+|-- README.md
+`}
+
+</pre>
+</div>
+</div>
