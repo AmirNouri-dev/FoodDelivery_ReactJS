@@ -35,7 +35,7 @@ npm run dev
 
 <div dir='ltr'>
 <pre>
-{`
+```bash
 
 |-food-delivery-react/
 |--src
@@ -55,8 +55,10 @@ npm run dev
 |--- images #all images used in app
 |--app.js #نقطه ورود اپ و تنظیم مسیرها
 |-- README.md
-`}
+
+```
 
 </pre>
 </div>
 </div>
+```
