@@ -37,8 +37,8 @@ npm run dev
 
 
 
-```plaintext
 <div dir='ltr'>
+```plaintext
 |-food-delivery-react/
 |--src
 |---components #reusable components
@@ -57,8 +57,8 @@ npm run dev
 |--- images #all images used in App
 |--app.js #نقطه ورود اپ و تنظیم مسیرها
 |-- README.md
-</div>
 ```
+</div>
 
 
 </div>
