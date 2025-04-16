@@ -33,6 +33,7 @@ npm run dev
 
 #ساختار پروژه
 
+<div dir='ltr'>
 ```bash
 food-delivery-react
 |-src
