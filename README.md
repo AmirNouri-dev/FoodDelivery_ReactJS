@@ -38,6 +38,7 @@ npm run dev
 
 
 <div dir='ltr'>
+  <pre>
 ```plaintext
 |-food-delivery-react/
 |--src
@@ -58,6 +59,7 @@ npm run dev
 |--app.js #نقطه ورود اپ و تنظیم مسیرها
 |-- README.md
 ```
+  </pre>
 </div>
 
 
