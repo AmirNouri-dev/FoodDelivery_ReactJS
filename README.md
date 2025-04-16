@@ -33,11 +33,23 @@ npm run dev
 
 #ساختار پروژه
 
+```bash
 food-delivery-react
-|-components #reusable components
+|-src
+    |-components #reusable components
+        |-Cart
+        |-Header
+        |-Main
+        |-Modal
+        |-Toast
+    |-contexts
 |-pages #main pages(home,login,sigin,etc.)
+    |-home
+    |-login
+    |-signin
 |-assests #include fonts
 |-public
-|- images #all images used in app
+    |- images #all images used in app
 |-app.js #نقطه ورود اپ و تنظیم مسیرها
 |- README.md
+```
