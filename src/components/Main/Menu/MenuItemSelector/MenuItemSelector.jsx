@@ -1,5 +1,5 @@
 import "./MenuItemSelector.css";
-import foodsContext from "../../../contexts/FoodContext";
+import foodsContext from "../../../../contexts/FoodContext";
 
 import { useContext, useEffect, useRef, useState } from "react";
 

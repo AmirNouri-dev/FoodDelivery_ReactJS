@@ -1,9 +1,8 @@
 import "./App.css";
-import Navigation from "./Header/Navigation/Navigation";
-import Modal from "./Modal/Modal";
+
 import routes from "./routes";
 import { useRoutes } from "react-router-dom";
-import Cart from "./Cart/Cart";
+import Cart from "./components/Cart/Cart";
 import foodsContext from "./contexts/FoodContext";
 import { useState } from "react";
 import { foods } from "./datas";

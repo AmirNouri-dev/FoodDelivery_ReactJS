@@ -5,7 +5,7 @@ import { FaPlus } from "react-icons/fa";
 import { FaMinus } from "react-icons/fa";
 import { FaRegTrashAlt } from "react-icons/fa";
 
-import foodsContext from "../contexts/FoodContext";
+import foodsContext from "../../contexts/FoodContext";
 
 export default function Cart() {
   const contextData = useContext(foodsContext);

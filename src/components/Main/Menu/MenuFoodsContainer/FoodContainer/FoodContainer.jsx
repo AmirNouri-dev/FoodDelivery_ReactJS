@@ -1,7 +1,7 @@
 import "./FoodContainer.css";
 import { GiShoppingCart } from "react-icons/gi";
 import { FaStar } from "react-icons/fa";
-import foodsContext from "../../../../contexts/FoodContext";
+import foodsContext from "../../../../../contexts/FoodContext";
 import { useContext } from "react";
 
 const FoodContainer = () => {

@@ -1,6 +1,6 @@
 import "./NavBasket.css";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import foodsContext from "../../../contexts/FoodContext";
+import foodsContext from "../../../../contexts/FoodContext";
 import { useContext } from "react";
 
 function NavBasket() {

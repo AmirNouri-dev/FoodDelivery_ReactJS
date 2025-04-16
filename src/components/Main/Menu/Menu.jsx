@@ -3,9 +3,9 @@ import MenuTitle from "./MenuTitle/MenuTitle";
 import MenuItemSelector from "./MenuItemSelector/MenuItemSelector";
 import MenuFoodsContainer from "./MenuFoodsContainer/MenuFoodsContainer";
 import FoodContainer from "./MenuFoodsContainer/FoodContainer/FoodContainer";
-import { foods } from "../../datas";
+import { foods } from "../../../datas";
 import { useContext, useState } from "react";
-import foodsContext from "../../contexts/FoodContext";
+import foodsContext from "../../../contexts/FoodContext";
 
 const allCategoris = ["all", ...new Set(foods.map((food) => food.category))];
 
