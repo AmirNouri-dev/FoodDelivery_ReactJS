@@ -1,9 +1,11 @@
 <div dir='rtl' align='right'>
 
 #App Demo
+
 ![دموی اپلیکیشن](./src/assets/demo.gif)
 
 #login page Demo
+
 ![دموی صفحه لاگین](./src/assets/loginPageDemo.gif)
 
 #Food Order App
@@ -27,15 +29,13 @@
 
 Bash:
 git clone
-https://
+[https://](https://github.com/AmirNouri-dev/FoodDelivery_ReactJS)
 npm install
 npm run dev
 
 #ساختار پروژه
 
-<div dir='ltr'>
-
-```bash
+```plaintext
 
 |-food-delivery-react/
 |--src
@@ -59,5 +59,3 @@ npm run dev
 ```
 
 </div>
-</div>
-```
