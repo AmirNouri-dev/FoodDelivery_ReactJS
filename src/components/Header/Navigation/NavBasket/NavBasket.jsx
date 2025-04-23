@@ -11,7 +11,7 @@ function NavBasket() {
   return (
     <div className="nav_logo_and_basket">
       <div className="nav_logo">
-        <img src="../public/images/lgo.png" alt="lgo" />
+        <img src="./public/images/lgo.png" alt="lgo" />
       </div>
       <a href="#" className="nav_basket" onClick={showBagHandler}>
         <div className="basket_count active">{contextData.userOrdersCount}</div>
